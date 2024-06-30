@@ -1,0 +1,106 @@
+#mainLogo {
+    font-size: xx-large;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.navbar a {
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+    font-family: "Headland One", serif;
+    font-weight: 700;
+
+    /* fonts font-family: "Anybody", sans-serif; */
+}
+
+.fa-snowflake::after {
+    content: ".";
+    color: red;
+    font-size: 50px;
+
+}
+
+.navbar-brand {
+    font-family: "Headland One", serif;
+}
+
+/* Cards */
+.mainPart {
+    padding: 50px 0;
+    background-image: url(../Images/pexels-hebaysal-773471.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+
+}
+
+.overLayer2 {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.heading h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3.125rem;
+    padding: 0 20px 0 0;
+}
+
+.heading span {
+    color: hsl(0, 84%, 44%);
+    font-size: 3.125rem;
+}
+
+.cards,
+.cardsGallery {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 5px #8888881a;
+
+}
+
+.card:hover {
+    scale: 1.02;
+    transition: .25s ease;
+}
+
+.fa-brands:hover {
+    color: red;
+
+
+}
+
+/* Cards end */

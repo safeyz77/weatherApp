@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Headland+One&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/main.css">
+
+
+</head>
+
+
+<body>
+    <!-- https://www.weatherapi.com/docs/ -->
+    <!-- http://api.weatherapi.com/v1/search.json?key=f5f22aecb0774820958145423242506&q=cairo -->
+    <!--API Key: f5f22aecb0774820958145423242506 -->
+    <!-- f5f22aecb0774820958145423242506 -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="#"><i class="fa-solid fa-snowflake " id="mainLogo"></i> Weather
+                App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="mainPart position-relative overflow-auto" id="mainPart ">
+        <div class="overLayer2 ">
+            <div class="container">
+                <div class="heading pt-5">
+                    <h1>Wear <span>appropriate</span> clothing <i class="fa-solid fa-hat-cowboy "></i></h1>
+                </div>
+                <div class="FindCity input-group m-3 ">
+                    <input type="text" onkeyup="getCurrent()" class="form-control" id="FindCity" placeholder="FindCity"
+                        aria-label="FindCity" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2">Find</button>
+                </div>
+                <div class="cards row d-flex mt-5 w-100">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card p-5 m-2">
+                            <header class="d-flex">
+                                <p id="dayName">Wednesday</p>
+                                <p class="ms-auto " id="dayDate">12 June</p>
+                            </header>
+                            <div id="cardBody">
+                                <h6 class="targetCity">Alexandria</h6>
+                                <h4 id="targetTemp">29.5 °C</h4>
+                                <p id="targetStatus">Sunny </p>
+                            </div>
+                            <footer class="d-flex justify-content-around">
+                                <i class="fa-solid fa-wind"></i> <span id="targetWind">18 km/h</span>
+                                <i class="fa-solid fa-cloud-showers-heavy"></i> <span id="targetRain">20%</span>
+                                <i class="fa-solid fa-compass-drafting"></i><span
+                                    id="targetWindDirectionTom">East</span>
+                            </footer>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card p-5 m-2">
+                            <header class="d-flex">
+                                <p id="dayNameTom">Wednesday</p>
+                                <p class="ms-auto " id="dayDateTom">12 June</p>
+                            </header>
+                            <div>
+                                <h6 class="targetCity2">Alexandria</h6>
+                                <h4 id="targetTempTom">29.5 °C</h4>
+                                <p id="targetStatusTom">Sunny </p>
+                            </div>
+                            <footer class="d-flex justify-content-around">
+
+                                <span><i class="fa-solid fa-wind"></i> 18 km/h</span>
+                                <span><i class="fa-solid fa-cloud-showers-heavy"></i> 20%</span>
+                                <span><i class="fa-solid fa-compass-drafting"></i> East</span>
+
+                            </footer>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card p-5 m-2">
+                            <header class="d-flex">
+                                <p id="dayNameAfterTom">Wednesday</p>
+                                <p class="ms-auto " id="dayDateAfterTom">12 June</p>
+                            </header>
+                            <div>
+                                <h6 class="targetCity3">Alexandria</h6>
+                                <h4 id="targetTempAfterTom">29.5 °C</h4>
+                                <p id="targetStatus">Sunny </p>
+                            </div>
+                            <footer class="d-flex justify-content-around">
+
+                                <span><i class="fa-solid fa-wind"></i> 18 km/h</span>
+                                <span><i class="fa-solid fa-cloud-showers-heavy"></i> 20%</span>
+                                <span><i class="fa-solid fa-compass-drafting"></i> East</span>
+
+                            </footer>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="d-flex my-5 container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email to subscribe..."
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">subscribe</button>
+        </div>
+        <div class="icons ms-5 d-flex p-2">
+            <i class="fa-brands ms-2 fs-2 fa-facebook p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-twitter p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-google-plus p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-pinterest p-2"></i>
+        </div>
+
+    </footer>
+    <div class="container pb-5 text-center">
+        <p>Copyright 2014 WeatherApp. Designed by MostafaSafey. All rights reserved</p>
+    </div>
+
+
+
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>

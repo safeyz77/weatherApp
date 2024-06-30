@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Headland+One&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/main.css">
+
+
+</head>
+
+<body>
+    <!-- https://www.weatherapi.com/docs/ -->
+    <!-- http://api.weatherapi.com/v1/search.json?key=<YOUR_API_KEY>&q=lond -->
+    <!--API Key: ba7fd20d04dd4fd8afc145556241206 -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="index.html"><i class="fa-solid fa-snowflake " id="mainLogo"></i> Weather
+                App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <footer class="d-flex my-5 container">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email to subscribe..."
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">subscribe</button>
+        </div>
+        <div class="icons ms-5 d-flex p-2">
+            <i class="fa-brands ms-2 fs-2 fa-facebook p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-twitter p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-google-plus p-2"></i>
+            <i class="fa-brands ms-2 fs-2 fa-pinterest p-2"></i>
+        </div>
+
+    </footer>
+    <div class="container pb-5 text-center">
+        <p>Copyright 2014 WeatherApp. Designed by MostafaSafey. All rights reserved</p>
+    </div>
+
+
+
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>
